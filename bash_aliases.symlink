@@ -1,0 +1,25 @@
+# GIT
+alias gs="git status"
+alias ga="git add -p"
+alias gd="git diff"
+alias gdc="git diff --cached"
+alias gc="git commit"
+alias gco="git checkout"
+alias gr="git rebase"
+
+# BUNDLER
+alias be="bundle exec"
+alias brake="bundle exec rake"
+
+alias e="sublime"
+alias bd="bin/dev"
+alias tdl="tail -n0 -f log/development.log"
+
+# POW / PRAX
+alias ttr="touch tmp/restart.txt"
+test -d ~/.pow && for app in `ls ~/.pow`; do
+  test -L ~/.pow/$app && alias $app="cd `readlink ~/.pow/$app`"
+done
+test -d ~/.prax && for app in `ls ~/.prax`; do
+  test -L ~/.pow/$app && alias $app="cd `readlink ~/.prax/$app`"
+done
