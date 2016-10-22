@@ -6,6 +6,7 @@ alias gdc="git diff --cached"
 alias gc="git commit"
 alias gco="git checkout"
 alias gr="git rebase"
+alias gg="git grep"
 
 # BUNDLER
 alias be="bundle exec"
