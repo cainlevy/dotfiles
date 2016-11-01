@@ -1,3 +1,9 @@
+
+# SHELL
+alias ll="ls -l"
+alias la="ls -a"
+alias l="ls -la"
+
 # GIT
 alias gs="git status"
 alias ga="git add -p"
