@@ -9,6 +9,8 @@ else
   exit
 fi
 
+cd `dirname $0`
+
 for file in Preferences.sublime-settings
 do
   src="$PWD/$file"
