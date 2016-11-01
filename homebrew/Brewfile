@@ -1,0 +1,12 @@
+# how does anyone still use cURL
+brew "httpie"
+
+# how does anyone still use ls -r
+brew "tree"
+
+# life with ruby
+brew "rbenv"
+brew "ruby-build"
+
+# i have a weakness
+brew "ne"

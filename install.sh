@@ -19,3 +19,4 @@ install_dotfiles () {
 
 install_dotfiles
 sublime/install.sh
+homebrew/install.sh
