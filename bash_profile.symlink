@@ -3,6 +3,9 @@
 # RBENV
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 # Homebrew
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Personal
