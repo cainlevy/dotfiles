@@ -34,3 +34,4 @@ fi
 # ENV
 # ~~~~~~~~~
 export EDITOR='ne'
+export DISABLE_SPRING=1
