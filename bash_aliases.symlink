@@ -30,3 +30,8 @@ done
 test -d ~/.prax && for app in `ls ~/.prax`; do
   test -L ~/.pow/$app && alias $app="cd `readlink ~/.prax/$app`"
 done
+
+# WMCTRL
+alias wm540p="wmctrl -r :SELECT: -e 1,0,0,960,540"
+alias wm720p="wmctrl -r :SELECT: -e 1,0,0,1280,720"
+alias wm1080p="wmctrl -r :SELECT: -e 1,0,0,1920,1080"
