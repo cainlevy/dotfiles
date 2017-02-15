@@ -1,0 +1,12 @@
+{
+  "installed_packages": [
+    "Package Control",
+    "Pretty JSON",
+    "Sass",
+    "SCSS",
+    "SublimeLinter",
+    "SublimeLinter-contrib-tslint",
+    "SublimeLinter-rubocop",
+    "TypeScript"
+  ]
+}

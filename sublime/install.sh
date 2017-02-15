@@ -11,7 +11,7 @@ fi
 
 cd `dirname $0`
 
-for file in Preferences.sublime-settings
+for file in $(ls *.sublime-settings)
 do
   src="$PWD/$file"
   dst="$SUBLIME_PATH/$file"
