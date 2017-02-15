@@ -10,8 +10,9 @@ export NVM_DIR="$HOME/.nvm"
 PATH=/usr/local/bin:/usr/local/sbin:$PATH
 # Personal
 PATH=~/bin:$PATH
-# NPM
-PATH=/usr/local/share/npm/bin:$PATH
+# YARN
+PATH="$PATH:$HOME/.yarn/bin:$(yarn global bin)"
+eval "$(nodenv init -)"
 
 # SHELL
 # ~~~~~~~~~

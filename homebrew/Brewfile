@@ -8,5 +8,8 @@ brew "tree"
 brew "rbenv"
 brew "ruby-build"
 
+# life with javascript
+brew "yarn"
+
 # i have a weakness
 brew "ne"
