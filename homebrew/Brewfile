@@ -1,5 +1,6 @@
 # how does anyone still use cURL
 brew "httpie"
+brew "wget"
 
 # how does anyone still use ls -r
 brew "tree"
