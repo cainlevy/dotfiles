@@ -1,10 +1,5 @@
 #!/usr/bin/env bash
 
-# TODO:
-# install homebrew packages on Mac
-# install .deb packages on Ubuntu
-# install sublime packages
-
 DOTFILES_ROOT=$(pwd)
 
 install_dotfiles () {
@@ -18,5 +13,4 @@ install_dotfiles () {
 }
 
 install_dotfiles
-sublime/install.sh
 homebrew/install.sh
