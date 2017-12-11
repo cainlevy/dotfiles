@@ -13,6 +13,8 @@ PATH=~/bin:$PATH
 # YARN
 PATH="$PATH:$HOME/.yarn/bin:$(yarn global bin)"
 eval "$(nodenv init -)"
+# GO
+PATH="$PATH:$HOME/go/bin"
 
 # SHELL
 # ~~~~~~~~~
@@ -36,3 +38,4 @@ fi
 # ~~~~~~~~~
 export EDITOR='ne'
 export DISABLE_SPRING=1
+export GOPATH=~/go
