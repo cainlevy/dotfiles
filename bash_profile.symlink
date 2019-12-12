@@ -1,18 +1,27 @@
 # PATH
 # ~~~~~~~~~
+PATH=~/bin:$PATH
+
 # RBENV
 export PATH=$HOME/.rbenv/bin:$PATH
 eval "$(rbenv init -)"
-# NVM
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
-# Homebrew
-PATH=/usr/local/bin:/usr/local/sbin:$PATH
-# Personal
-PATH=~/bin:$PATH
+
+# NODENV
+command -v nodenv > /dev/null && (
+  export PATH="$HOME/.nodenv/bin:$PATH"
+  eval "$(nodenv init -)"
+)
+
+# HOMEBREW
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  PATH=/usr/local/bin:/usr/local/sbin:$PATH
+fi
+
 # YARN
-PATH="$PATH:$HOME/.yarn/bin:$(yarn global bin)"
-eval "$(nodenv init -)"
+command -v yarn > /dev/null && (
+  PATH="$PATH:$HOME/.yarn/bin:$(yarn global bin)"
+)
+
 # GO
 PATH="$PATH:$HOME/go/bin"
 
