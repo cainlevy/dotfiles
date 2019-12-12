@@ -30,6 +30,7 @@ if [[ -n "$PS1" ]]; then
   # ls colors
   if [[ "$OSTYPE" == "linux-gnu" ]]; then
     alias ls="ls --color=auto"
+    eval "$(dircolors)" # set $LS_COLORS
   elif [[ "$OSTYPE" == "darwin"* ]]; then
     export CLICOLOR=1
     export LSCOLORS=ExFxCxDxBxegedabagacad
