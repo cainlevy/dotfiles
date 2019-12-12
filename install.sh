@@ -13,4 +13,6 @@ install_dotfiles () {
 }
 
 install_dotfiles
-homebrew/install.sh
+
+[ "$OSTYPE" == "linux-gnu" ] && linux/install.sh
+[ "$OSTYPE" == "darwin"* ] && darwin/install.sh
