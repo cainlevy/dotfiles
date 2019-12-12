@@ -28,8 +28,12 @@ if [[ -n "$PS1" ]]; then
   PS1='\[\e]1;\$ \W\a\e]2;\u@\h\a\]'"$PS1"
 
   # ls colors
-  export CLICOLOR=1
-  export LSCOLORS=ExFxCxDxBxegedabagacad
+  if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    alias ls="ls --color=auto"
+  elif [[ "$OSTYPE" == "darwin"* ]]; then
+    export CLICOLOR=1
+    export LSCOLORS=ExFxCxDxBxegedabagacad
+  fi
 
   source ~/.bash_aliases
 fi
