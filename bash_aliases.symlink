@@ -5,14 +5,19 @@ alias la="ls -a"
 alias l="ls -la"
 
 # GIT
-alias gs="git status"
 alias ga="git add -p"
+alias gb="git branch"
+alias gc="git commit"
+alias gca="git commit --amend"
+alias gco="git checkout"
 alias gd="git diff"
 alias gdc="git diff --cached"
-alias gc="git commit"
-alias gco="git checkout"
-alias gr="git rebase"
 alias gg="git grep"
+alias gl="git log"
+alias gprune="git remote prune origin && git branch --merged | grep -v master | xargs git branch -d"
+alias gr="git rebase"
+alias gs="git status"
+alias gsync="git pull --rebase && git remote prune origin && git branch --merged | grep -v master | xargs git branch -d"
 
 # BUNDLER
 alias be="bundle exec"
