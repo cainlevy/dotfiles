@@ -3,14 +3,12 @@
 PATH=~/bin:$PATH
 
 # RBENV
-export PATH=$HOME/.rbenv/bin:$PATH
-eval "$(rbenv init -)"
+[ -d "$HOME/.rbenv" ] && export PATH=$HOME/.rbenv/bin:$PATH
+command -v rbenv > /dev/null && eval "$(rbenv init -)"
 
 # NODENV
-command -v nodenv > /dev/null && (
-  export PATH="$HOME/.nodenv/bin:$PATH"
-  eval "$(nodenv init -)"
-)
+[ -d "$HOME/.nodenv" ] && export PATH="$HOME/.nodenv/bin:$PATH"
+command -v nodenv > /dev/null && eval "$(nodenv init -)"
 
 # HOMEBREW
 if [[ "$OSTYPE" == "darwin"* ]]; then
