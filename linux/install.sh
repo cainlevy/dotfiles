@@ -30,4 +30,5 @@ command -v diff-so-fancy > /dev/null || (
 )
 
 echo 'installing vscode-settings'
-ln -sf ../vscode-settings.json ~/config/Code/User/settings.json
+mkdir -p ~/.config/Code/User
+ln -sf "$PWD/vscode-settings.json" ~/.config/Code/User/settings.json

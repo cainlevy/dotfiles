@@ -9,7 +9,6 @@
     "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
   },
   "breadcrumbs.enabled": true,
-  "editor.matchBrackets": false,
   "editor.minimap.enabled": false,
   "editor.renderIndentGuides": false,
   "editor.wordBasedSuggestions": false,

@@ -8,5 +8,5 @@ command -v brew > /dev/null || (
 )
 
 echo 'installing VS Code settings'
-
-ln -sf $PWD/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
+mkdir -p ~/Library/Application\ Support/Code/User
+ln -sf "$PWD/vscode-settings.json" ~/Library/Application\ Support/Code/User/settings.json
