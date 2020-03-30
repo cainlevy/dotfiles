@@ -28,3 +28,6 @@ command -v diff-so-fancy > /dev/null || (
   wget -O ~/bin/diff-so-fancy https://raw.githubusercontent.com/so-fancy/diff-so-fancy/master/third_party/build_fatpack/diff-so-fancy
   chmod a+x ~/bin/diff-so-fancy
 )
+
+echo 'installing vscode-settings'
+ln -sf ../vscode-settings.json ~/config/Code/User/settings.json

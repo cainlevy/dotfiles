@@ -1,0 +1,40 @@
+{
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "breadcrumbs.enabled": true,
+  "editor.matchBrackets": false,
+  "editor.minimap.enabled": false,
+  "editor.renderIndentGuides": false,
+  "editor.wordBasedSuggestions": false,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorer.confirmDelete": false,
+  "extensions.ignoreRecommendations": true,
+  "files.autoSave": "off",
+  "git.confirmSync": false,
+  "go.formatTool": "gofmt",
+  "go.useLanguageServer": true,
+  "liveshare.audio.joinCallBehavior": "accept",
+  "liveshare.audio.startCallOnShare": true,
+  "terminal.integrated.env.osx": {
+    "VISUAL": "/usr/local/bin/code --wait"
+  },
+  "terminal.integrated.scrollback": 20000,
+  "search.exclude": {
+    "**/node_modules": true
+  },
+  "window.zoomLevel": 0,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.sideBar.location": "left"
+}
