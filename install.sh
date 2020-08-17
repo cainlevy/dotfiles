@@ -15,4 +15,5 @@ install_dotfiles () {
 install_dotfiles
 
 [ "$OSTYPE" == "linux-gnu" ] && linux/install.sh
-[ "$OSTYPE" == "darwin"* ] && darwin/install.sh
+[ "$OSTYPE" == "darwin"* ] && macos/install.sh
+

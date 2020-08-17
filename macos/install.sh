@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-echo 'installing homebrew'
+command -v brew > /dev/null || (
+	echo 'installing homebrew'
 
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew bundle
+	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+	brew bundle
+)
 
 echo 'installing VS Code settings'
 
-ln -sf ../vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
+ln -sf $PWD/vscode-settings.json ~/Library/Application\ Support/Code/User/settings.json
