@@ -29,11 +29,15 @@
   "terminal.integrated.env.osx": {
     "VISUAL": "/usr/local/bin/code --wait"
   },
+  "terminal.integrated.env.linux": {
+    "VISUAL": "code --wait"
+  },
   "terminal.integrated.scrollback": 20000,
   "search.exclude": {
     "**/node_modules": true
   },
-  "window.zoomLevel": 0,
+  "window.zoomLevel": -1,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.sideBar.location": "left"
+  "workbench.sideBar.location": "left",
+  "editor.formatOnSave": true
 }

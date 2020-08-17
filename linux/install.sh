@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 set -euo pipefail
+set -x
 
 mkdir -p ~/bin
 command -v curl > /dev/null || sudo apt-get install curl
