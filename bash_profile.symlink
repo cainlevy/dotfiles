@@ -1,6 +1,10 @@
 # PATH
 # ~~~~~~~~~
-PATH=~/bin:~/.local/bin:$PATH
+
+# HOMEBREW
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  PATH=/usr/local/bin:/usr/local/sbin:$PATH
+fi
 
 # RBENV
 [ -d "$HOME/.rbenv" ] && export PATH=$HOME/.rbenv/bin:$PATH
@@ -10,11 +14,6 @@ command -v rbenv > /dev/null && eval "$(rbenv init -)"
 [ -d "$HOME/.nodenv" ] && export PATH="$HOME/.nodenv/bin:$PATH"
 command -v nodenv > /dev/null && eval "$(nodenv init -)"
 
-# HOMEBREW
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  PATH=/usr/local/bin:/usr/local/sbin:$PATH
-fi
-
 # YARN
 command -v yarn > /dev/null && (
   PATH="$PATH:$HOME/.yarn/bin:$(yarn global bin)"
@@ -22,6 +21,9 @@ command -v yarn > /dev/null && (
 
 # GO
 PATH="$PATH:$HOME/go/bin"
+
+# CUSTOM
+PATH=~/bin:~/.local/bin:$PATH
 
 # SHELL
 # ~~~~~~~~~
