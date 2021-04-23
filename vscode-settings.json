@@ -36,8 +36,15 @@
   "search.exclude": {
     "**/node_modules": true
   },
-  "window.zoomLevel": -1,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.sideBar.location": "left",
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "files.associations": {
+    "*.gql": "graphql"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "go.toolsManagement.autoUpdate": true
 }
