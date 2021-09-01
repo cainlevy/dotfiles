@@ -17,7 +17,7 @@ alias gl="git log"
 alias gprune="git remote prune origin && git branch --merged | grep -v master | xargs git branch -d"
 alias gr="git rebase"
 alias gs="git status"
-alias gsync="git pull --rebase && git remote prune origin && git branch --merged | grep -v master | xargs git branch -d"
+alias gsync="git pull --rebase && git remote prune origin && git branch --merged | grep -v master | grep -v main | xargs git branch -d"
 alias gpoh="git push -u origin HEAD"
 
 # BUNDLER
