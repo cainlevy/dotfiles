@@ -22,6 +22,11 @@ command -v yarn > /dev/null && (
 # GO
 PATH="$PATH:$HOME/go/bin"
 
+# Android
+[ -d "$HOME/Android" ] && ANDROID_HOME=$HOME/Android/sdk
+[ -d "$HOME/Android" ] && ANDROID_SDK_ROOT=$ANDROID_HOME
+[ -d "$HOME/Android" ] && PATH="$PATH:$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools"
+
 # CUSTOM
 PATH=~/bin:~/.local/bin:$PATH
 
