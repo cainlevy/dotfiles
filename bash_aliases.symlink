@@ -14,7 +14,6 @@ alias gd="git diff"
 alias gdc="git diff --cached"
 alias gg="git grep"
 alias gl="git log"
-alias gprune="git remote prune origin && git branch --merged | grep -v master | xargs git branch -d"
 alias gr="git rebase"
 alias gs="git status"
 alias gsync="git pull --rebase && git remote prune origin && git branch --merged | grep -v master | grep -v main | grep -v dev | xargs git branch -d"
@@ -25,19 +24,4 @@ alias be="bundle exec"
 alias brake="bundle exec rake"
 
 alias e="code"
-alias bd="bin/dev"
-alias tdl="tail -n0 -f log/development.log"
 
-# POW / PRAX
-alias ttr="touch tmp/restart.txt"
-test -d ~/.pow && for app in `ls ~/.pow`; do
-  test -L ~/.pow/$app && alias $app="cd `readlink ~/.pow/$app`"
-done
-test -d ~/.prax && for app in `ls ~/.prax`; do
-  test -L ~/.pow/$app && alias $app="cd `readlink ~/.prax/$app`"
-done
-
-# WMCTRL
-alias wm540p="wmctrl -r :SELECT: -e 1,0,0,960,540"
-alias wm720p="wmctrl -r :SELECT: -e 1,0,0,1280,720"
-alias wm1080p="wmctrl -r :SELECT: -e 1,0,0,1920,1080"
